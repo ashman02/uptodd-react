@@ -1,0 +1,41 @@
+.happy-parents-card {
+    width: 300px;
+    height: 415px;
+    background-color: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    
+  }
+    
+  
+  .quote-container {
+    position: relative;
+    padding-top: 10px;
+  }
+  
+  .quote-mark {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    width: 24px;
+    height: 24px;
+  }
+  
+  .quote-text {
+    font-size: 20px;
+    color: #333;
+    line-height: 1.4;
+    margin-top: 20px;
+    padding-left: 10px;
+  }
+
+
+@media only screen and (max-width: 350px) {
+
+  .happy-parents-card {
+    width: 280px;
+    padding: 0;
+  }
+}
