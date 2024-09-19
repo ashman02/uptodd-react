@@ -1,6 +1,6 @@
 
 import './App.css'
-import SuccessStory from './pages/SuccessStory'
+import SuccessStory from './components/SuccessStory'
 
 function App() {
 
