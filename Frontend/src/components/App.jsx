@@ -3,7 +3,7 @@ import ApplicationForm from './ApplicationForm'; // Move the form component to a
 import About from './About';
 import Home from './Home';
 import './Aboutsection.css';
-import './App.css';
+import './index.css';
 import Step from './Step';
 import SuccessStory from './SuccessStory';
 function App() {
