@@ -1,0 +1,23 @@
+.Focus-section {
+  background: linear-gradient(135deg, #5067f7, #6432b8); /* Gradient background */
+  color: white; /* Text color */
+  text-align: center; /* Center align the text */
+  padding: 40px; /* Add padding */
+  font-size: 3.3rem; /* Font size */
+  height: 60vh; /* Full viewport height */
+  display: flex;
+  line-height: 1.4;
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+}
+
+.
+
+.Focus-section p {
+  max-width: 600px; /* Limit paragraph width */
+  font-size: 1.2rem; /* Adjust font size */
+  line-height: 1.5; /* Improve readability */
+  margin: 0 auto; /* Center align */
+  text-align: justify; /* Justify the paragraph */
+  padding: 0 20px; /* Add padding for responsiveness */
+}

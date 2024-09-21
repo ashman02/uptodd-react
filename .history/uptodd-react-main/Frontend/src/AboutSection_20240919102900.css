@@ -1,0 +1,14 @@
+#Focussection {
+  background-color: blue; /* Change this to your desired color */
+  padding-left:
+  border-radius: 8px; /* Optional: add rounded corners */
+  margin-bottom: 20px; /* Optional: space between sections */
+  height: 300px;
+  color:white;
+  font-size: 5vw;
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center; /* Center vertically */
+  text-align: center; /* Center text in case it wraps */
+}

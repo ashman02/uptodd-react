@@ -1,0 +1,25 @@
+.Focus-section {
+  background: linear-gradient(135deg, #5067f7, #6432b8); /* Gradient background */
+  color: white; /* Text color */
+  font-size: 1.5rem; /* Font size */
+  height: 60vh; /* Full viewport height */
+  display: flex;
+  flex-direction: row;
+  
+  align-items: center; /* Center content horizontally */
+
+}
+.Focus-section p {
+  max-width: 600px; /* Limit paragraph width */
+  font-size: 1.2rem; /* Adjust font size */
+  line-height: 1.5; /* Improve readability */
+  margin: 0 auto; /* Center align */
+  text-align: justify; /* Justify the paragraph */
+}
+
+.ourstory
+{
+  font-size: larger;
+  line-height: 1.2;
+  justify-content: center;
+}

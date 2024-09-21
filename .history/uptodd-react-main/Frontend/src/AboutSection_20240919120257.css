@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+  
+}
+#Focussection {
+  background-color: blue; /* Change this to your desired color */
+  padding:80px 20px;
+  margin:0; /* Optional: space between sections */
+  width:100vw;
+  height: 410px;
+  color:white;
+  font-size: 4vw;
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center; /* Center vertically */
+  text-align: center; /* Center text in case it wraps */
+  overflow: hidden;
+}
+#Focussection p{
+  text-align: center;
+  margin: 0;
+  max-width: 800px; /* Limit the width of the text to keep it readable */
+  margin-left: auto;
+  margin-right: auto; /* Centers the text horizontally */
+  padding: 0 20px; 
+}
+#ourstorysection
+{
+ Padding:20px;
+ font-size: 25px;
+}
+#ourstorysection p
+{
+  text-align: center;
+  margin: 0;
+  max-width: 800px; /* Limit the width of the text to keep it readable */
+  margin-left: auto;
+  margin-right: auto; /* Centers the text horizontally */
+  padding: 0 20px; 
+}
+#imagecontainer{
+  justify-content: center; /* Center horizontally */
+  align-items: center;
+  display: flex;
+}
