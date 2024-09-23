@@ -15,7 +15,7 @@ import playlistCheck from "../assets/images/successstory/luminary/playlist_add_c
 import supervisedUser from "../assets/images/successstory/luminary/supervised_user_circle.svg"
 import sliderPrev from "../assets/images/successstory/symbols/slider-prev.svg"
 import sliderNext from "../assets/images/successstory/symbols/slider-next.svg"
-import Footer from "./Footer"
+
 
 
 const SuccessStory = () => {
@@ -475,8 +475,6 @@ const SuccessStory = () => {
           </div>
         </div>
       </section>
-
-      <Footer />
     </div>
   )
 }
