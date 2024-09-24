@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Button from './Button';
+import './step.css';
 export default function Step() {
     const [selectedStep, setSelectedStep] = useState(1);
 

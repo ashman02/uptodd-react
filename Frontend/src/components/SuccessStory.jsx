@@ -114,7 +114,7 @@ const SuccessStory = () => {
         ) {
           // Smoothly reset to the start
           const resetScroll = setInterval(() => {
-            scrollContainer.scrollLeft -= 10
+            scrollContainer.scrollLeft -= 100
             if (scrollContainer.scrollLeft <= 0) {
               clearInterval(resetScroll)
             }
@@ -271,7 +271,7 @@ const SuccessStory = () => {
           />
         </div>
         <div className="see-all-cont">
-          <a href="">
+          <a href="/happy-parents">
             <button className="see-all-btn parents-all-btn">See All</button>
           </a>
         </div>
@@ -332,7 +332,7 @@ const SuccessStory = () => {
 
       <section className="carousel-container how-baby-thrives genius-babies">
         <h1>
-          The Proof is in the Play: <span>Watch How Babies Thrive!</span>
+          The Proof is in the Play:<span>Watch How Babies Thrive!</span>
         </h1>
         <h5>
           Busy Parents, Smart Choice: Invest 10 Mins a day to a Brighter
@@ -373,7 +373,7 @@ const SuccessStory = () => {
           </button>
         </div>
         <div className="see-all-cont child-see-all-cont">
-          <a href="">
+          <a href="/baby-achievers">
             <button className="see-all-btn child-all-btn">See All</button>
           </a>
         </div>

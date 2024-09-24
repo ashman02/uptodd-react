@@ -12,7 +12,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-list">
-        <div className="footer-card"id="footer-card-with-logo">
+        <div className="footer-card" id="footer-card-with-logo">
           <div className="nav-logo">
             <img src={footerLogo} alt="" />
           </div>
@@ -98,7 +98,7 @@ const Footer = () => {
         </div>
         <div className="footer-card" id="footer-card-with-applinks">
           <h3>Download App now</h3>
-          <div className="application-links" >
+          <div className="application-links">
             <a
               href="https://play.google.com/store/apps/details?id=com.uptodd.uptoddapp&amp;hl=en_IN&amp;gl=US"
               target="_blank"
@@ -116,20 +116,24 @@ const Footer = () => {
       </div>
       <div className="footer-bottom">
         <h4>
-          © 2024 All Rights Reserved 
+          © 2024 All Rights Reserved
           <span>
             <a href="/privacy-policy" target="_blank">
               Privacy policy
             </a>
-          </span> 
+          </span>
           <span>
             <a href="/terms-conditions" target="_blank">
               Terms and Conditions
             </a>
           </span>
         </h4>
-        <img src={line} alt="UpTodd - Nurturing Baby Genius"/>
-        <p>Disclaimer: The information provided on this website is for general purposes only. We do not guarantee its accuracy or suitability for any specific use. Use it at your own discretion.</p>
+        <img src={line} alt="UpTodd - Nurturing Baby Genius" />
+        <p>
+          Disclaimer: The information provided on this website is for general
+          purposes only. We do not guarantee its accuracy or suitability for any
+          specific use. Use it at your own discretion.
+        </p>
       </div>
     </footer>
   )

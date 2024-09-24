@@ -5,6 +5,7 @@
   overflow-x: hidden;
   margin: 0px;
   font-family: "DM Sans", sans-serif;
+  box-sizing: border-box;
 }
 
 .carousel-container {
@@ -30,8 +31,13 @@
   padding: 0 15px;
 }
 
+.genius-babies h1 {
+  margin-top: 5px;
+}
+
 .genius-babies h1 span {
   font-weight: 400;
+  margin-left: -8px;
 }
 
 .genius-babies h5 {
@@ -43,6 +49,7 @@
   line-height: 30px;
   letter-spacing: -0.8px;
   margin-top: 16px;
+  margin-bottom: 40px;
 }
 
 .carousel-wrapper {
@@ -61,6 +68,7 @@
   scroll-snap-type: x mandatory;
   width: 90%;
   margin: 0 auto;
+  overflow-y: hidden;
 }
 
 .carousel::-webkit-scrollbar {
@@ -75,7 +83,7 @@
 
 .carousel-card {
   min-width: 300px; /* Ensure each card has a minimum width */
-  height: 300px;
+  height: 330px;
   flex: 0 0 auto; /* Prevent shrinking */
   background: white;
   color: black;
@@ -84,7 +92,7 @@
   margin: 0 20px;
   max-width: 350px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  scroll-snap-align: start;
+  /* scroll-snap-align: start; */
 }
 
 .carousel-card h3 {
@@ -92,11 +100,13 @@
   margin-top: 10px;
   text-align: start;
   color: #002863;
+  font-weight: 700;
 }
 
 .carousel-card iframe {
   text-align: center;
   border-radius: 20px;
+  width: -webkit-fill-available;
 }
 
 .prev,
@@ -110,11 +120,11 @@
 }
 
 .prev {
-  left: 0;
+  left: 10px;
 }
 
 .next {
-  right: 0;
+  right: 15px;
 }
 
 .child-all-btn {
@@ -135,21 +145,21 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 40px 0;
+  height: 250px;
 }
 
 .intro h5 {
   font-weight: 500;
   font-size: 1.4em;
   margin-bottom: 0.2em;
-  letter-spacing: -0.96px;
+  letter-spacing: -0.8px;
 }
 
 .intro h1 {
   font-weight: 500;
   font-size: 2.2em;
   margin-top: 0.2em;
-  letter-spacing: -1.44px;
+  letter-spacing: -1.0px;
 }
 
 .dev-wonder {
@@ -167,6 +177,7 @@
   color: rgb(0, 40, 99, 1);
   font-size: 2em;
   margin-top: 10px;
+  font-weight: 700;
 }
 
 .dev-cont {
@@ -285,8 +296,9 @@
 }
 
 .curlyline {
-  text-align: center;
-  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px;
 }
 
 /* happy parents section */
@@ -315,6 +327,7 @@
   line-height: 34px;
   letter-spacing: -0.96px;
   margin-top: 17px;
+  margin-bottom: 20px;
 }
 
 .happy-parent-list-container {
@@ -355,6 +368,10 @@
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 10px;
+}
+
+.happy-parents-card div iframe {
+  width: -webkit-fill-available;
 }
 
 .quote-container {
@@ -431,7 +448,9 @@
 }
 
 .lum-item {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .lum-item img {
@@ -469,7 +488,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: 68px;
-  letter-spacing: -1.6px;
+  letter-spacing: -0.8px;
 }
 
 .awared-babies h1 span {
@@ -577,7 +596,7 @@
 /* doctor reveiew */
 
 .doctor-review {
-  padding-bottom: 40px;
+  padding: 40px 0px;
   overflow: hidden;
 }
 
@@ -587,7 +606,7 @@
   font-size: 44px;
   font-style: normal;
   font-weight: 700;
-  letter-spacing: -1.76px;
+  letter-spacing: -1.3px;
 }
 
 .doctor-review h5 {
@@ -598,7 +617,7 @@
   font-weight: 400;
   line-height: 26px;
   letter-spacing: -0.96px;
-  margin-top: -30px;
+  margin: 30px 0px;
 }
 
 .doctor-review-list {
@@ -643,7 +662,7 @@
   background: #5a40c4;
   padding: 10px 0px;
   bottom: -10px;
-  height: 50px;
+  height: 70px;
 }
 
 .doctor-review-image-part div span {
@@ -817,8 +836,7 @@
 
   .carousel-card,
   .carousel-card iframe {
-    min-width: 200px;
-    max-width: 250px;
+    width: -webkit-fill-available;
   }
 
   .carousel-header h1 {
@@ -901,8 +919,8 @@
   }
 
   .lum-item {
-    display: flex;
-    align-items: normal;
+    flex-direction: row;
+    align-items: start;
     gap: 10px;
   }
 

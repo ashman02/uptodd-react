@@ -20,7 +20,8 @@
 }
 
 .social-media-icons {
-  margin-top: 40px;
+  margin-top: 30px;
+  display: flex;
 }
 
 .social-media-icons a {
@@ -150,3 +151,4 @@
         width: 94%;
     }
 }
+
