@@ -17,22 +17,22 @@ export default function Step() {
     }
   return (
     <div>
-      <div className="flex flex-col md:flex-row border-2 rounded-md p-4 m-4">
-        <div className="w-full md:flex-1 order-2 md:order-1">
+      <div className="step-container">
+        <div className="step-list">
         {steps.map(step => (
             <div 
                 key={step.id}
-                className={`text-black text-sm border-2 rounded-xl p-2 m-2 cursor-pointer ${selectedStep === step.id ? 'border-green-500' : 'border-gray-300'} ${selectedStep === step.id ? 'flex' : 'hidden'} md:flex`}
+                className={`step-item ${selectedStep === step.id ? 'border-green-500' : 'border-gray-300'} ${selectedStep === step.id ? 'flex' : 'hidden'}`}
                 onClick={() => handleStepChange(step.id)}
             >
-                <div className='flex justify-center items-center flex-col'>
-                    <h4 className='text-sm'>STEP</h4>
-                    <h3 className='text-xl text-bold leading-none'>{step.title}</h3>
+                <div className='step-header'>
+                    <h4 className='step-title'>STEP</h4>
+                    <h3 className='step-number'>{step.title}</h3>
                 </div>
-                    <svg className='mx-5 w-2' xmlns="http://www.w3.org/2000/svg" width="1" height="60" viewBox="0 0 1 60" fill="none">
+                    <svg className='step-divider' xmlns="http://www.w3.org/2000/svg" width="1" height="60" viewBox="0 0 1 60" fill="none">
                         <path d="M0.5 0V60" stroke="#002863" strokeDasharray="2 2" />
                     </svg>
-                <div className='flex justify-center items-center'>
+                <div className='step-content'>
                     <p>
                         {step.content}
                     </p>
@@ -40,23 +40,23 @@ export default function Step() {
             </div>
         ))}
         </div>
-        <div className="w-full md:flex-1 order-1 md:order-2">
-          <div className='relative h-full'>
-            <div className='overflow-hidden h-64 md:h-4/5'>
+        <div className="step-image-container">
+          <div className='step-image-wrapper'>
+            <div className='step-image-inner'>
                 {steps.map((step) => (
                     <img
                         key={step.id}
                         src={step.image}
                         alt={`Step ${step.id}`}
-                        className={`w-full h-full object-contain absolute top-0 left-0 transition-opacity duration-500 ${selectedStep === step.id ? 'opacity-100' : 'opacity-0'}`}
+                        className={`step-image ${selectedStep === step.id ? 'opacity-100' : 'opacity-0'}`}
                     />
                 ))}
             </div>
-            <div className='flex justify-center p-4 absolute bottom-0 left-0 right-0'>
+            <div className='step-indicators'>
                 {steps.map((step) => (
                     <span
                         key={step.id}
-                        className={`inline-block w-3 h-3 rounded-full mx-2 cursor-pointer ${selectedStep === step.id ? 'bg-green-500' : 'bg-gray-700'}`}
+                        className={`step-indicator ${selectedStep === step.id ? 'bg-green-500' : 'bg-gray-700'}`}
                         onClick={() => handleStepChange(step.id)}
                     ></span>
                 ))}
@@ -65,7 +65,7 @@ export default function Step() {
         </div>
       </div>
 
-      <Button className="bg-green-500 block text-white mx-auto px-4 py-2 my-4 rounded-xl text-lg font-bold">Access this Program</Button>
+      <Button className="access-button">Access this Program</Button>
     </div>
   )
 }
