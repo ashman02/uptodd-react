@@ -3,19 +3,23 @@ import ApplicationForm from './ApplicationForm'; // Move the form component to a
 import About from './About';
 import Home from './Home';
 import './Aboutsection.css';
-import './index.css';
+import './App.css';
 import Step from './Step';
 import SuccessStory from './SuccessStory';
+import Layout from './Layout';
+import Footer from './Footer'; 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Layout  />} />
+        <Route index element={<Home />} />
         <Route path="/About" element={<About />} />
         <Route path="/Apply" element={<ApplicationForm />} />
         <Route path="/step" element={<Step />} />
         <Route path="/achievers" element={<SuccessStory />} />
       </Routes>
+      <Footer/>
     </Router>
   );
 }
